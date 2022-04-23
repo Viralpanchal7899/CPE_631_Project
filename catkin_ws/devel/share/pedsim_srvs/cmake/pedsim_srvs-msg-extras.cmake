@@ -1,0 +1,2 @@
+set(pedsim_srvs_MESSAGE_FILES "")
+set(pedsim_srvs_SERVICE_FILES "/home/viral/Desktop/Study/CPE_631_Project/catkin_ws/src/CPE631Final/pedsim_srvs/srv/SetAgentState.srv;/home/viral/Desktop/Study/CPE_631_Project/catkin_ws/src/CPE631Final/pedsim_srvs/srv/GetAgentState.srv;/home/viral/Desktop/Study/CPE_631_Project/catkin_ws/src/CPE631Final/pedsim_srvs/srv/SetAllAgentsState.srv;/home/viral/Desktop/Study/CPE_631_Project/catkin_ws/src/CPE631Final/pedsim_srvs/srv/GetAllAgentsState.srv")

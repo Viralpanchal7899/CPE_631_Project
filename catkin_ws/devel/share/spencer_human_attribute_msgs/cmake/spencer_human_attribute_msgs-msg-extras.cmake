@@ -1,0 +1,2 @@
+set(spencer_human_attribute_msgs_MESSAGE_FILES "/home/viral/Desktop/Study/CPE_631_Project/catkin_ws/src/CPE631Final/2ndparty/spencer_messages/spencer_human_attribute_msgs/msg/CategoricalAttribute.msg;/home/viral/Desktop/Study/CPE_631_Project/catkin_ws/src/CPE631Final/2ndparty/spencer_messages/spencer_human_attribute_msgs/msg/ScalarAttribute.msg;/home/viral/Desktop/Study/CPE_631_Project/catkin_ws/src/CPE631Final/2ndparty/spencer_messages/spencer_human_attribute_msgs/msg/HumanAttributes.msg")
+set(spencer_human_attribute_msgs_SERVICE_FILES "")
