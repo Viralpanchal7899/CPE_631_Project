@@ -1,0 +1,24 @@
+footprint: [[-0.225, -0.225], [-0.225, 0.225], [0.225, 0.225], [0.225, -0.225]]
+#footprint: [[0.36, 0.13], [0.20, 0.13], [0.08, 0.23], [0.08, 0.39], [-0.08, 0.39], [-0.08, 0.23], [-0.20, 0.13], [-0.36, 0.13], [-0.36, -0.13], [-0.20, -0.13], [-0.08, -0.23], [-0.08, -0.39], [0.08, -0.39], [0.08, -0.23], [0.20, -0.13], [0.36, -0.13]]
+footprint_padding: 0 #0.01
+robot_base_frame: /base_link
+transform_tolerance: 1.5
+
+obstacle_range: 15.0 #2.0 #3.0 #5.5
+raytrace_range: 15.0 #3.0 #6.0
+
+#layer definitions
+static:
+    map_topic: /map
+    subscribe_to_updates: true
+
+obstacles_laser:
+    observation_sources: point_cloud_realsense point_cloud_sonar laser #rplidar_laser
+    laser: {data_type: LaserScan, clearing: true, marking: true, topic: /scan, inf_is_valid: true}
+    point_cloud_realsense: {data_type: PointCloud2, topic: /camera/depth/color/points , marking: true, clearing: true}
+    point_cloud_sonar: {data_type: PointCloud2, topic: /sensor_pointcloud_node/pointcloud , marking: true, clearing: true}
+    #rplidar_laser: {data_type: LaserScan, topic: /rpl/scan , marking: true, clearing: true}
+
+inflation:
+    inflation_radius: 0.5 #0.3 #0.2 #1.0 #0.5 #1.0 #0.2 #1.75
+    cost_scaling_factor: 10 #5 #2.58
